@@ -1,0 +1,224 @@
+body {
+  background-color: #425567;
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  padding-top: 50px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Заголовки */
+
+h2 {
+  font-family: "Arial";
+  font-weight: 300;
+  color: white;
+}
+
+/* Абзацы и оформление */
+
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Лого */
+
+.glyphicon {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-size: 35px;
+  top: -5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cсылки */
+
+a {
+  color: #3bc492;
+  word-wrap: break-word;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover, a:focus {
+  color: #c0392b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before, a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Внутренние разделы */
+
+#headerwrap {
+  background-color: #425567;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+  font-size: 14px;
+}
+
+#headerwrap h1 {
+  margin-top: 30px;
+  color: white;
+  font-size: 70px;
+}
+
+#headerwrap h3 {
+  color: white;
+  font-size: 30px;
+}
+
+
+
+/* Футер */
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background: #222222;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+#footer p {
+  margin: 0 0 5px 0;
+}
+
+.credits {
+  color: #999;
+}
+
+/* Форма регистрации */
+
+#registration {
+  margin-left: 125px;
+  width: 100px;
+}
+
+/* Форма авторизации */
+
+#authorization {
+  margin-left: 125px;
+  width: 100px;
+}
+
+/* Сообщения на формах */
+
+#message {
+  color: #c0392b;
+  text-align: center;
+
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#logo .glyphicon {
+  top: 10px;
+}
+
+#navigationContainer {
+  margin-right: 5%;
+}
+
+* {box-sizing:border-box}
+
+/* Контейнер слайдшоу */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* По умолчанию слайды скрыты */
+.mySlides {
+  display: none;
+}
+
+/* Стиль точек */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Плавная анимация */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: fade;
+  -moz-animation-duration: 3s;
+  -ms-animation-name: fade;
+  -ms-animation-duration: 3s;
+  -o-animation-name: fade;
+  -o-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@-moz-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@-ms-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@-o-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
