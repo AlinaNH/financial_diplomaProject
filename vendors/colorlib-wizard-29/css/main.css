@@ -1,0 +1,493 @@
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+#wizard .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#wizard .row-space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#wizard .row-refine {
+  margin: 0 -15px;
+}
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+#wizard html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wizard * {
+  padding: 0;
+  margin: 0;
+}
+
+#wizard *, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+#wizard body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+#wizard li > ol,
+#wizard li > ul {
+  margin-bottom: 0;
+}
+
+/**
+ * Remove default table spacing.
+ */
+#wizard table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+#wizard fieldset {
+  min-width: 0;
+  /* [1] */
+  border: 0;
+}
+
+#wizard button {
+  outline: none;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+
+#wizard body {
+  font-family: "Lato", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#wizard h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+#wizard h1 {
+  font-size: 36px;
+}
+
+#wizard h2 {
+  font-size: 30px;
+}
+
+#wizard h3 {
+  font-size: 24px;
+}
+
+#wizard h4 {
+  font-size: 18px;
+}
+
+#wizard h5 {
+  font-size: 15px;
+}
+
+#wizard h6 {
+  font-size: 13px;
+}
+
+#wizard img {
+  max-width: 100%;
+  height: auto;
+}
+
+#wizard a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#wizard a:link {
+  text-decoration: none;
+}
+
+#wizard a:visited {
+  text-decoration: none;
+}
+
+#wizard a:hover {
+  text-decoration: none;
+}
+
+#wizard a:active {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+#wizard .wrapper {
+  margin: 0 auto;
+}
+
+#wizard .wrapper--w820 {
+  max-width: 820px;
+}
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+#wizard input,
+textarea {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+ * width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+#wizard textarea {
+  resize: none;
+}
+
+#wizard button {
+  cursor: pointer;
+}
+
+#wizard .input-group {
+  position: relative;
+  max-width: 593px;
+  margin: 0 auto;
+}
+
+#wizard .input--style-1 {
+  border: 1px solid #e5e5e5;
+  line-height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  padding: 0 30px;
+  padding-right: 140px;
+  font-size: 15px;
+  color: #666;
+}
+
+#wizard .input--style-1::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #999;
+}
+
+#wizard .input--style-1:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+  opacity: 1;
+}
+
+#wizard .input--style-1::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  opacity: 1;
+}
+
+#wizard .input--style-1:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999;
+}
+
+#wizard .input--style-1:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #999;
+}
+
+#wizard .btn--next {
+  line-height: 50px;
+  background: #666;
+  padding: 0 30px;
+  -webkit-border-top-right-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  border-top-right-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-bottom-right-radius: 25px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#wizard .btn--next:hover {
+  background: #2C4257;
+}
+
+#wizard .form {
+  padding: 0 15px;
+}
+
+#wizard label.error {
+  display: block;
+  color: red;
+  padding: 3px 30px;
+}
+
+/* ==========================================================================
+   #SELECT2
+   ========================================================================== */
+#wizard .select--no-search .select2-search {
+  display: none !important;
+}
+
+#wizard .select2-container--open .select2-dropdown--below {
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+#wizard .select2-container--default .select2-results__option {
+  padding-left: 22px;
+}
+
+#wizard .rs-select2 .select2-container {
+  width: 100% !important;
+  outline: none;
+  background: #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#wizard .rs-select2 .select2-container .select2-selection--single {
+  outline: none;
+  border: none;
+  height: 50px;
+  background: transparent;
+}
+
+#wizard .rs-select2 .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 50px;
+  padding-left: 0;
+  color: #555;
+  font-size: 16px;
+  font-family: inherit;
+  padding-left: 22px;
+  padding-right: 50px;
+}
+
+#wizard .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+  height: 50px;
+  right: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#wizard .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
+#wizard .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+  font-family: "Material-Design-Iconic-Font";
+  content: '\f2f9';
+  font-size: 24px;
+  color: #999;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#wizard .rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+/* ==========================================================================
+   #TAB
+   ========================================================================== */
+#wizard .tab-list {
+  list-style: none;
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#wizard .tab-list__item {
+  display: inline-block;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 0 13px;
+  margin-bottom: 15px;
+}
+
+#wizard @media (max-width: 767px) {
+  .tab-list__item {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+#wizard .tab-list__link {
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  -webkit-border-radius: 22.5px;
+  -moz-border-radius: 22.5px;
+  border-radius: 22.5px;
+  background: #999;
+  width: 162px;
+  text-align: left;
+}
+
+#wizard @media (max-width: 767px) {
+  .tab-list__link {
+    width: 100%;
+  }
+}
+
+#wizard .tab-list__link .step {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #425567;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#wizard .tab-list__link .desc {
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+#wizard .tab-list .active .tab-list__link {
+  background: #428bca;
+}
+
+#wizard .tab-list .active .tab-list__link .step {
+  background: #425567;
+}
+
+#wizard .tab-content > .tab-pane {
+  display: none;
+  padding: 35px 0;
+  padding-bottom: 43px;
+}
+
+#wizard .tab-content > .tab-pane.active {
+  display: block;
+}
+
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+#wizard .title {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+#wizard .card {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+#wizard .card-1 {
+  background: transparent;
+}
+
+#wizard .card-1 .card-body {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
