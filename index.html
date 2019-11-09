@@ -1,0 +1,138 @@
+<!-- Лендинговая страница -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Метаданные -->
+    <meta charset="utf-8">
+    <title>financial.gq</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="shortcut icon" href="/img/pageicon.png" type="image/png">
+    <meta content="Инструмент financial.gq позволяет анализировать данные баланса, а также определеяет оценки платежеспособности и финансовой устойчивости организации."
+          name="description">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- /Метаданные -->
+
+    <!-- Подключение Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Подключение файла пользовательских стилей -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Фиксированная навигация -->
+  <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+      <div class="brand">
+          <a class="navbar-brand" href="http://financial.gq/"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></a>
+          <a class="navbar-brand smothscroll" href="/index.html"><b>financial.gq</b></a>
+      </div>
+      <div class="container" id="navigationContainer">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="nav-item"><a href="http://financial.gq/enter.php#signup" class="nav-link">Регистрация</a></li>
+                  <li class="nav-item"><a href="http://financial.gq/enter.php#signin" class="nav-link">Войти</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- /Фиксированная навигация -->
+
+  <!-- Поле описания инструмента -->
+  <section id="mainfield">
+    <div id="headerwrap">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-12">
+            <h2>Добро пожаловать в  <b>financial.gq</b>!</h2>
+            <p>Инструмент financial.gq позволяет по данным загруженного в него бухгалтерского баланса определять оценки состава, структуры и динамики значений его статей, а также оценки платежеспособности и финансовой устойчивости организации, баланс которой принадлежит.</p>
+            <br>
+          </div>
+
+          <div class="col-lg-2">
+            <h2>Удобный интерфейс</h2>
+            <p>Необходимо только загрузить документ баланса в соответствущую форму, и инструмент автоматически составит необходимый анализ.</p>
+            <img class="hidden-xs hidden-sm hidden-md" src="img/arrow1.png">
+          </div>
+
+            <!-- Контейнер слайдшоу -->
+            <div class="col-lg-8">
+                <div class="slideshow-container">
+
+                    <!-- Картинки -->
+                    <div class="mySlides fade">
+                        <img class="img-responsive" src="img/mainPicture1.jpg" alt="financial.gq">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img-responsive" src="img/mainPicture2.jpg" alt="financial.gq">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img-responsive" src="img/mainPicture3.jpg" alt="financial.gq">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img-responsive" src="img/mainPicture4.jpg" alt="financial.gq">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img-responsive" src="img/mainPicture5.jpg" alt="financial.gq">
+                    </div>
+                </div>
+                <br>
+
+                <!-- Точки -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+            <!-- Контейнер слайдшоу -->
+
+          <div class="col-lg-2">
+            <br>
+            <img class="hidden-xs hidden-sm hidden-md" src="img/arrow2.png">
+            <h2>Понятный алгоритм</h2>
+            <p>financial.gq – это отличный помощник для студентов и начинающих специалистов в области финансового анализа.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Поле описания инструмента -->
+
+
+
+  <!-- Футер -->
+  <div id="footer">
+    <div class="container">
+      <div class="credits">
+        2019 <a href="http://www.sbmt.bsu.by/">Институт бизнеса БГУ</a>
+      </div>
+    </div>
+  </div>
+  <!-- /Футер -->
+
+  <!-- Скрипт для показа слайдшоу -->
+  <script src="js/slideshow.js"></script>
+
+</body>
+
+</html>
